@@ -134,7 +134,7 @@ class Solution {
 
 ## LeetCode Links
 - **Problem**: [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
-- **Solution**: [My Submission](https://leetcode.com/problems/longest-common-prefix/submissions/1757144364)
+- **Solution**: [My Submission](https://leetcode.com/problems/merge-two-sorted-lists/solutions/7155849/solving-everyday-by-sirions-f95z/)
 
 ## Tags
 `Linked List` `Two Pointers` `Recursion` `Dummy Node` `Merge Algorithm`
