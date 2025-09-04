@@ -22,6 +22,12 @@ public class Main {
         ListNode current0 = dummy;
         ListNode current1 = list1;
         ListNode current2 = list2;
+        if (list1 == null && list2 != null){
+            return list2;
+        }
+        if (list1 != null && list2 == null ) {
+            return list1;
+        }
         while (current1 != null && current2 != null){
             if (current1.val >= current2.val){
                 current0.next = new ListNode(current2.val);
@@ -34,6 +40,19 @@ public class Main {
                 current1 = current1.next;
             }
         }
-
+        if (current1 == null){
+            while (current2 != null) {
+                current0.next = new ListNode(current2.val);
+                current0 = current0.next;
+                current2 = current2.next;
+            } else {
+                while (current1 != null) {
+                    current0.next = new ListNode(current1.val);
+                    current0 = current0.next;
+                    current1 = current1.next;
+                }
+            }
+        }
+        return dummy.next;
     }
 }
