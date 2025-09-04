@@ -40,8 +40,19 @@ public class Main {
                 current1 = current1.next;
             }
         }
-
-
+        if (current1 == null){
+            while (current2 != null) {
+                current0.next = new ListNode(current2.val);
+                current0 = current0.next;
+                current2 = current2.next;
+            } else {
+                while (current1 != null) {
+                    current0.next = new ListNode(current1.val);
+                    current0 = current0.next;
+                    current1 = current1.next;
+                }
+            }
+        }
         return dummy.next;
     }
 }
